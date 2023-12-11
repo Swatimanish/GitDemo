@@ -35,6 +35,8 @@ public class ExtentReportsDemo {
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://rahulshettyacademy.com/");
 		System.out.println(driver.getTitle());
+		System.out.println("added the comments for testing");
+		System.out.println("Hello world");
 		//test.addScreenCaptureFromBase64String(outcome);
 		extent.flush(); // necessary to flush to end listning report, it will update the status pass or fail 
 		
