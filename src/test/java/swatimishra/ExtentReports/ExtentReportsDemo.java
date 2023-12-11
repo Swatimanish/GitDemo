@@ -26,7 +26,7 @@ public class ExtentReportsDemo {
 		
 		extent=new ExtentReports();
 		extent.attachReporter(reporter);
-		extent.setSystemInfo("Tester", "Swati Mishra");
+		extent.setSystemInfo("Tester", "Swati Mishra New");
 	}
 	@Test
 	public void initialDemo()
@@ -51,6 +51,7 @@ public class ExtentReportsDemo {
 		Boolean visible=driver.findElement(By.cssSelector(".social-icon-one")).isEnabled();
 		Assert.assertTrue(visible);
 		extent.flush(); // necessary to flush to end listning report, it will update the status pass or fail 
+		System.out.println("new");
 		
 	}
 
